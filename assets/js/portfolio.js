@@ -365,6 +365,16 @@ document.addEventListener("DOMContentLoaded", () => {
   handleScroll();
 });
 
+// Typed.js Initialization
+$(document).ready(function() {
+  var typed = new Typed(".typed-text", {
+      strings: ["Cybersecurity Analyst","System Administrator", "Web Developer", "Penetration Tester", "Ethical Hacker", "Programmer","CTF Player", "..."],
+      typeSpeed: 200,
+      backSpeed: 70,
+      loop: true
+});
+});
+
 // Fetch and display GitHub projects in the Projects section
 const projectsContainer = document.getElementById("projects-container");
 
